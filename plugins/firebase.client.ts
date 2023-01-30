@@ -5,6 +5,10 @@ import { getAnalytics } from "firebase/analytics"
 
 export default defineNuxtPlugin(nuxtApp => {
 
+ 
+
+
+
     const firebaseConfig = {
         apiKey: "AIzaSyA4k400kEi9s05gUjtJqchNSgdDBJWONq8",
         authDomain: "mckyazilim.firebaseapp.com",
@@ -16,6 +20,10 @@ export default defineNuxtPlugin(nuxtApp => {
       };
 
     const app = initializeApp(firebaseConfig)
+
+    
+
+
     const auth = getAuth(app)
     const analytics = getAnalytics(app)
     const firestore = getFirestore(app)

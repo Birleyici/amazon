@@ -27,7 +27,7 @@
                                 placeholder="şifre tekrarı">
 
                             <div class="form-group">
-                                <button @click="registerToPage(userData)" type="button" class="btn btn-warning"
+                                <button  type="button" class="btn btn-warning"
                                     id="signUp">Kayıt Ol</button>
                                 <p>Bir hesap oluşturduğunuzda, Amazon'un Kullanım ve Satış Koşulları'nı kabul etmiş
                                     olursunuz. Daha fazla bilgi için Gizlilik Bildirimi, Çerez Bildirimi ve İlgi Alanına
@@ -53,48 +53,3 @@
 
 </template>
 
-
-<script>
-
-
-import { collection, doc, setDoc } from "firebase/firestore";
-import { db } from "../firebase/index";
-
-export default {
-    data() {
-        return {
-            userData: {
-                email: null,
-                password: null
-            }
-        }
-    },
-
-    methods: {
-
-        async registerToPage(userData) {
-
-
-
-            const data = {
-                ...userData
-            }
-
-            const newCityRef = doc(collection(db, "users"));
-
-            // later...
-            await setDoc(newCityRef, data);
-
-            this.$store.commit('setUserData', data)
-            
-            setTimeout(() => {
-                this.$router.push({path:'/LoginPage'})
-            }, 1500);
-
-
-        }
-
-
-    }
-}
-</script>

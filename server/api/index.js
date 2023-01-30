@@ -27,8 +27,6 @@ app.use(
     "/api/kahve",
     eventHandler(async () => {
 
-   
-
         const result = await Products.find({});
 
         return result
