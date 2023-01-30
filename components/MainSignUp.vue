@@ -12,14 +12,14 @@
                             <input type="Şifre" class="form-control" id="exampleInputPassword1"
                                 placeholder="Ad Ve Soyad">
                             <label id="words_1" for="exampleInputEmail1">Cep Telefonu veya E-posta</label>
-                            <input v-model="userData.email" type="email" class="form-control" id="exampleInputEmail1"
+                            <input  type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp" placeholder="Cep Telefonu veya E-posta">
                             <small id="emailHelp" class="form-text text-muted"></small>
                         </div>
                         <div class="form-group">
                             <label id="words_2" for="exampleInputPassword1">Password &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
                                 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label>
-                            <input v-model="userData.password" type="password" class="form-control"
+                            <input  type="password" class="form-control"
                                 id="exampleInputPassword1" placeholder="En Az 6 Karakter">
                             <label id="words_2" for="exampleInputPassword1">Password &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
                                 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label>
