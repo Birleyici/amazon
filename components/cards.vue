@@ -20,7 +20,7 @@
                 height="400"
                 @click="toggle"
               >
-              <h2>PRİME İLE BEDAVA KARGO</h2><router-link to="shopPage"><img  src="cm1.jpg" alt="" class="src"></router-link>
+              <h2>PRİME İLE BEDAVA KARGO</h2><router-link to="shopPage"><img  src="/cm1.jpg" alt="" class="src"></router-link>
               
 
               </v-card>
@@ -43,7 +43,7 @@
                 @click="toggle"
               >
               <h2>PRİME İLE BEDAVA KARGO</h2>
-              <img  src="cm2.jpg" alt="" class="src">
+              <img  src="/cm2.jpg" alt="" class="src">
               </v-card>
              
             </v-item>
@@ -64,7 +64,7 @@
                 @click="toggle"
               >
               <h2>PRİME İLE BEDAVA KARGO</h2>
-              <img  src="cm3.jpg" alt="" class="src">
+              <img  src="/cm3.jpg" alt="" class="src">
               </v-card>
              
             </v-item>
@@ -90,7 +90,7 @@
                 
               >
               <h2>PRİME İLE BEDAVA KARGO</h2>
-              <img  src="cm4.jpg" alt="" class="src">    
+              <img  src="/cm4.jpg" alt="" class="src">    
                      
               
               </v-card>

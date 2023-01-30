@@ -19,7 +19,7 @@
             </ul>
         </div>
         <div class="second-3">
-            <img src="amazonliste.png">
+            <img src="/amazonliste.png">
         </div>
         </div>
     </div>

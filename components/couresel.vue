@@ -27,7 +27,7 @@
 <script>
 export default {
   data: () => ({
-    sliderPhotos: ['si1.jpg','si2.jpg','si3.jpg','s4.jpg'],
+    sliderPhotos: ['/si1.jpg','/si2.jpg','/si3.jpg','/s4.jpg'],
     model: 0,
     colors: [
       'primary',

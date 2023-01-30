@@ -9,7 +9,7 @@
 					<div class="preview col-md-6">
 						
 						<div class="preview-pic tab-content">
-						  <img src="cm1.jpg"> 
+						  <img src="/cm1.jpg"> 
 						</div>
 						
 						

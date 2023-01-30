@@ -2,7 +2,7 @@
 <div>
     <div class="first">
         <div class="flex logo">
-            <router-link to="/"><a ><img src="logo.png" alt=""> </a></router-link>          
+            <router-link to="/"><a ><img src="/logo.png" alt=""> </a></router-link>          
             <div class="map flex">
                 <i class="fas fa-map-marker"></i>
                 <div>
