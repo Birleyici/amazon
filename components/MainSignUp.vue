@@ -46,23 +46,20 @@
 
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { useUserStore } from '/stores/user';
 
 const userStore = useUserStore();
 
+const user = {
+fullname: null as string | null,
+email: null as string | null,
+pass: null as string | null,
+pass2: null as string | null,
+};
 
-const user = ref({
-    fullname:null,
-    email:null,
-    pass:null,
-    pass2:null,
-})
-
-function createUser(){
-
-    userStore.createUser(user)
-
+function createUser(): void {
+userStore.createUser(user);
 }
 
   </script>
