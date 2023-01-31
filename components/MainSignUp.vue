@@ -51,12 +51,12 @@ import { useUserStore } from '/stores/user';
 
 const userStore = useUserStore();
 
-const user = {
+const user = ref({
 fullname: null as string | null,
 email: null as string | null,
 pass: null as string | null,
 pass2: null as string | null,
-};
+})
 
 function createUser(): void {
 userStore.createUser(user);
