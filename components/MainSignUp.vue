@@ -6,28 +6,21 @@
                     <form>
                         <div class="sign-in">Kayıt Ol</div>
                         <div class="form-group">
-                            <label id="words_2" for="exampleInputPassword1">Ad Ve Soyad &nbsp &nbsp &nbsp &nbsp &nbsp
-                                &nbsp
-                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label>
-                            <input type="Şifre" class="form-control" id="exampleInputPassword1"
-                                placeholder="Ad Ve Soyad">
+                           
                             <label id="words_1" for="exampleInputEmail1">Cep Telefonu veya E-posta</label>
-                            <input  type="email" class="form-control" id="exampleInputEmail1"
+                            <input v-model="user.email"  type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp" placeholder="Cep Telefonu veya E-posta">
                             <small id="emailHelp" class="form-text text-muted"></small>
                         </div>
                         <div class="form-group">
                             <label id="words_2" for="exampleInputPassword1">Password &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
                                 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label>
-                            <input  type="password" class="form-control"
+                            <input v-model="user.pass"  type="password" class="form-control"
                                 id="exampleInputPassword1" placeholder="En Az 6 Karakter">
-                            <label id="words_2" for="exampleInputPassword1">Password &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label>
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="şifre tekrarı">
+                        
 
                             <div class="form-group">
-                                <button  type="button" class="btn btn-warning"
+                                <button  type="button" class="btn btn-warning" @click="createUser()"
                                     id="signUp">Kayıt Ol</button>
                                 <p>Bir hesap oluşturduğunuzda, Amazon'un Kullanım ve Satış Koşulları'nı kabul etmiş
                                     olursunuz. Daha fazla bilgi için Gizlilik Bildirimi, Çerez Bildirimi ve İlgi Alanına
@@ -53,3 +46,23 @@
 
 </template>
 
+<script setup>
+import { useUserStore } from '/stores/user';
+
+const userStore = useUserStore();
+
+
+const user = ref({
+    fullname:null,
+    email:null,
+    pass:null,
+    pass2:null,
+})
+
+function createUser(){
+
+    userStore.createUser(user)
+
+}
+
+  </script>
